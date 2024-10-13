@@ -1,0 +1,55 @@
+.Bottombar_Container {
+  width: 100%;
+  height: 6vh;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #222a35;
+  gap: 40px;
+  margin-top: 1vh;
+  position: fixed;
+  bottom: 0;
+}
+.Bottombar_Texts {
+  display: flex;
+  align-items: center;
+  gap: 4.8vh;
+}
+
+.Bottombar_Texts {
+  display: flex;
+  align-items: center;
+  gap: 4.8vh;
+}
+.Bottombar_Text {
+  color: #fff;
+}
+.Bottombar_Buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.Bottombar_Button {
+  padding: 4px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #767171;
+  color: #fff;
+}
+
+.Bottombar_Text {
+  color: #fff;
+}
+.Bottombar_Buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.Bottombar_Button {
+  padding: 4px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #767171;
+  color: #fff;
+}

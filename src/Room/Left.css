@@ -1,0 +1,133 @@
+.Left_Container {
+  position: relative;
+  display: flex;
+  width: 20.7vh;
+  height: 10.7vh;
+  gap: 4px;
+}
+.Left_Left {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  gap: 4px;
+}
+.Left_LeftTop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed #7f7f7f;
+}
+
+.no-border {
+  border: none;
+}
+
+.base-image,
+.overlay-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-gif {
+  z-index: 2;
+}
+
+.Left_LeftTop img {
+  width: 100%; /* 컨테이너 너비에 맞추기 */
+  height: 100%; /* 컨테이너 높이에 맞추기 */
+  object-fit: cover; /* 비율을 유지하면서 컨테이너를 가득 채우기 */
+}
+.Left_LeftBottom {
+  display: flex;
+  flex: 1;
+}
+.Left_Right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+.Left_RightTop {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.Left_RightBottom {
+  display: flex;
+  flex: 1;
+}
+.Left_Space1 {
+  flex: 1;
+  border: 1px dashed #7f7f7f;
+  display: flex; /* 이미지를 flex 아이템으로 만들어주기 */
+  align-items: center; /* 중앙 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+  overflow: hidden; /* 컨테이너를 벗어나는 이미지 숨기기 */
+}
+
+.Left_Space1 img {
+  width: 100%; /* 컨테이너 너비에 맞추기 */
+  height: 100%; /* 컨테이너 높이에 맞추기 */
+  object-fit: cover; /* 비율을 유지하면서 컨테이너를 가득 채우기 */
+}
+.Left_Space2 {
+  flex: 2;
+  border: 1px dashed #7f7f7f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh; /* 또는 필요에 따라 vw를 사용 */
+  overflow: hidden; /* 텍스트가 박스 밖으로 나가지 않도록 설정 */
+}
+.Left_Space3 {
+  flex: 1;
+  border: 1px dashed #7f7f7f;
+  display: flex; /* 이미지를 flex 아이템으로 만들어주기 */
+  align-items: center; /* 중앙 정렬 */
+  justify-content: center; /* 중앙 정렬 */
+  overflow: hidden; /* 컨테이너를 벗어나는 이미지 숨기기 */
+  position: relative; /* 이미지 포지셔닝을 위해 */
+  width: 100%; /* 영역 전체를 사용 */
+  height: 100%; /* 영역 전체를 사용 */
+}
+
+.Left_Space3 img {
+  max-width: 100%; /* 최대 너비 제한 */
+  max-height: 100%; /* 최대 높이 제한 */
+  object-fit: contain; /* 이미지 비율을 유지하며 영역에 맞춤 */
+  position: absolute; /* 중앙 정렬을 위해 */
+  top: 50%; /* 상단에서 50% 위치 */
+  left: 50%; /* 왼쪽에서 50% 위치 */
+  transform: translate(-50%, -50%); /* 정확한 중앙에 위치 */
+}
+
+.Hover_Info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* 왼쪽으로 조금 더 벌리기 */
+  width: 110%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.Left_Container:hover .Hover_Info {
+  display: block;
+}
+
+.Left_Container .hidden {
+  visibility: hidden;
+}

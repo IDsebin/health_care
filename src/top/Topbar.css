@@ -1,0 +1,150 @@
+.Topbar_Border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 9vh;
+  background-color: #3a3838;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+p {
+  color: #6a7282;
+}
+
+.Topbar_Id {
+  border: 1px solid white;
+  border-radius: 10px;
+  color: yellow;
+  padding: 5px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+.Topbar_Idframe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -0.5vh;
+}
+
+.Topbar_Border {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 수평 정렬을 위해 */
+}
+
+.Topbar_Appearname {
+  display: flex;
+  flex-direction: column; /* 토글과 텍스트를 수직 정렬 */
+  align-items: center; /* 가운데 정렬을 위해 */
+  margin-left: 4vh;
+  margin-top: 1.5vh;
+}
+
+.toggleSwitch {
+  width: 30px;
+  height: 15px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+  cursor: pointer;
+}
+
+/* 토글 버튼 */
+.toggleSwitch .toggleButton {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 4px; /* 'left' 대신 'right' 사용 */
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f03d3d;
+}
+
+#toggle:checked ~ .toggleSwitch {
+  background: #f03d3d;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+  left: 4px; /* 이동해야 할 위치 조정 */
+  right: auto; /* 기본값으로 설정 */
+  background: #fff;
+}
+
+.toggleSwitch,
+.toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.Topbar_Radiobox {
+  margin-left: 7vh;
+  margin-top: 1.5vh;
+}
+
+.Topbar_Radiobox {
+  display: flex; /* 컨테이너를 가로로 배치 */
+  justify-content: space-around; /* 각 항목 사이에 공간을 균등하게 분배 */
+  gap: 35px;
+}
+
+.radio-container {
+  display: flex; /* 각 라디오 버튼과 텍스트를 가로로 배치 */
+  flex-direction: column; /* 내부 요소들을 수직으로 쌓음 */
+  align-items: center; /* 내부 요소들을 중앙 정렬 */
+}
+
+.Topbar_Menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+  color: white;
+}
+
+.Topbar_Login {
+  display: flex; /* 각 라디오 버튼과 텍스트를 가로로 배치 */
+  flex-direction: row;
+  align-items: center;
+}
+
+.Topbar_user {
+  display: flex;
+  flex-direction: column; /* 이 속성으로 인해 자식 요소들이 수직으로 쌓임 */
+  margin-left: auto; /* 이 속성이 .Topbar_user를 오른쪽으로 밀어냅니다. */
+  padding-right: 20px;
+}
+
+.Topbar_Submenu img {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 768px) {
+  .Topbar_Border {
+    flex-direction: column; /* 모바일에서는 항목들을 세로로 쌓음 */
+    height: auto; /* 높이 자동 조절 */
+    padding: 10px;
+  }
+
+  .Topbar_Menu,
+  .Topbar_user {
+    justify-content: center; /* 센터 정렬 */
+    width: 100%; /* 전체 너비 */
+  }
+}
+
+.Topbar_input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 6vh;
+  height: auto;
+}

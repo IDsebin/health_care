@@ -1,0 +1,105 @@
+.ActtingManagement {
+  width: 100%;
+  background-color: #000000;
+}
+
+.content_area {
+  display: flex;
+  height: calc(100vh - 14vh); /* Adjust if you have other headers or footers */
+}
+
+.Actting_border {
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.management_table {
+  width: 100%; /* 테이블의 가로 폭을 100%로 설정 */
+  border-collapse: collapse; /* 셀 사이 간격 없애기 */
+}
+
+.management_table th,
+.management_table td {
+  border: 1px solid #ccc; /* 셀 경계선 스타일 */
+  padding: 10px; /* 셀 안의 패딩 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.management_table th {
+  background-color: #000000; /* 헤더 셀 배경색 */
+}
+
+.management_table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* 짝수 행 배경색 */
+}
+
+.management_item {
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 부드러운 배경색 변화 효과 */
+}
+
+.management_item.active {
+  background-color: #545454; /* 활성화 상태의 배경색 */
+  color: rgb(0, 0, 0); /* 활성화 상태의 텍스트 색상 */
+}
+
+.sidebar {
+  width: 25%; /* Take up the remaining 25% of the space */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the content */
+  justify-content: start; /* Align content to the top */
+  overflow-y: auto; /* Enable scrolling if content is longer than the area */
+  height: calc(100vh - 14vh); /* Adjust height to match Actting_border */
+}
+
+.circle_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.circle {
+  width: 7dvh;
+  height: 3vh;
+  padding-left: 4.5vh;
+  padding-right: 4.5vh;
+  border-radius: 100px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5vh;
+  cursor: pointer;
+}
+
+.Actting_Roominfo {
+  margin-top: 2vh;
+}
+
+.room_note {
+  width: 100%;
+  height: calc(
+    100% - 10vh
+  ); /* Subtract height of other elements within sidebar */
+  resize: none; /* Disable resizing to maintain layout */
+  box-sizing: border-box; /* Include padding and border in height calculation */
+  padding: 10px; /* Padding for internal spacing */
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.footer_item {
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 40%;
+  background-color: #ddd;
+  cursor: pointer;
+}

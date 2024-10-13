@@ -1,0 +1,147 @@
+.Servicebar_Border {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 9vh;
+  background-color: #3a3838;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+p {
+  color: #6a7282;
+}
+
+.Servicebar_Id {
+  border: 1px solid white;
+  border-radius: 10px;
+  color: yellow;
+  padding: 5px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+.Servicebar_Idframe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: -0.5vh;
+}
+
+.Servicebar_Border {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* 수평 정렬을 위해 */
+}
+
+.Servicebar_Appearname {
+  display: flex;
+  flex-direction: column; /* 토글과 텍스트를 수직 정렬 */
+  align-items: center; /* 가운데 정렬을 위해 */
+  margin-left: 4vh;
+  margin-top: 1.5vh;
+}
+
+.toggleSwitch {
+  width: 30px;
+  height: 15px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
+  cursor: pointer;
+}
+
+/* 토글 버튼 */
+.toggleSwitch .toggleButton {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 4px; /* 'left' 대신 'right' 사용 */
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: #f03d3d;
+}
+
+#toggle:checked ~ .toggleSwitch {
+  background: #f03d3d;
+}
+
+#toggle:checked ~ .toggleSwitch .toggleButton {
+  left: 4px; /* 이동해야 할 위치 조정 */
+  right: auto; /* 기본값으로 설정 */
+  background: #fff;
+}
+
+.toggleSwitch,
+.toggleButton {
+  transition: all 0.2s ease-in;
+}
+
+.Servicebar_Refresh {
+  margin-left: 8vh;
+  margin-top:1vh;
+}
+
+.Servicebar_Refresh img {
+  width: 10%;
+  height: 10%;
+}
+
+.Servicebar_Currenttime{
+  font-size: 5vh;
+  margin-left: -5vh;
+  color: #6a7282;
+}
+
+.Servicebar_Title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 23vh;
+  font-size: 7vh;
+  margin-top: 1vh;
+  color: rgb(177, 177, 177);
+}
+
+.Servicebar_Login {
+  display: flex; /* 각 라디오 버튼과 텍스트를 가로로 배치 */
+  flex-direction: row;
+  align-items: center;
+}
+
+.Servicebar_user {
+  display: flex;
+  flex-direction: column; 
+  margin-left: auto; 
+  padding-right: 20px;
+}
+
+.Servicebar_Submenu img {
+  width: 15px;
+  height: 15px;
+}
+
+.Servicebar_Searchbar{
+  display: flex;
+  margin-left: 15vh;
+}
+
+@media (max-width: 768px) {
+  .Servicebar _Border {
+    flex-direction: column; /* 모바일에서는 항목들을 세로로 쌓음 */
+    height: auto; /* 높이 자동 조절 */
+    padding: 10px;
+  }
+
+  .Servicebar _Menu,
+  .Servicebar _user {
+    justify-content: center; /* 센터 정렬 */
+    width: 100%; /* 전체 너비 */
+  }
+}

@@ -1,0 +1,43 @@
+/* RoomModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(168, 166, 166, 0.8); /* Semi-transparent white background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050; /* Ensures modal is on top of other content */
+}
+
+.modal-content {
+  background: rgb(0, 0, 0); /* Light background for the content */
+  padding: 20px; /* Spacing inside the modal */
+  border-radius: 10px; /* Rounded corners for the modal */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  width: 50%; /* Modal takes up half of the viewport width */
+  max-height: 90vh; /* Maximum height to ensure it fits in most viewports */
+  overflow-y: auto; /* Allows scrolling within the modal if content is too long */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the start vertically */
+}
+
+.modal-header {
+  width: 100%; /* Full width of the modal */
+  text-align: center; /* Center the text within the header */
+  padding: 10px 0; /* Padding above and below the text */
+  margin-bottom: 20px; /* Space between header and the rest of the content */
+  font-size: 1.5rem; /* Larger text for the header */
+  font-weight: bold; /* Make the header text bold */
+  color: #333; /* Dark color for text for better readability */
+  color: white;
+}
+
+.modal-body {
+  width: 100%; /* Use full width of the modal content area */
+  padding: 10px; /* Padding around the content */
+}

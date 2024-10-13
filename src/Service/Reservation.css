@@ -1,0 +1,52 @@
+.Reservation_Box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* 컨테이너의 가로 크기를 꽉 채움 */
+}
+
+.management_section {
+  display: flex;
+  width: 100%; /* 가로 전체 사용 */
+}
+
+.management_item {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(199, 199, 199);
+  border-right: 1px solid white;
+}
+
+.management_item:last-child {
+  border-right: none;
+}
+
+.management_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.management_table th,
+.management_table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.management_table th {
+  background-color: #000000;
+  color: white;
+}
+
+.management_table td {
+  background-color: white;
+}
+
+.Accting_all {
+  border: 1px solid gainsboro;
+  padding: 3px 10px;
+  background-color: gainsboro;
+  border-radius: 7px;
+  margin-top: 3vh;
+}
